@@ -1,0 +1,62 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: careflow-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+      MONGO_INITDB_DATABASE: careflow
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+    restart: unless-stopped
+    networks:
+      - careflow-network
+
+  server:
+    build:
+      context: .
+    container_name: careflow-backend
+    environment:
+      NODE_ENV: production
+      MONGO_URL: mongodb://admin:admin123@mongodb:27017/careflow?authSource=admin
+      PORT: 8000
+      # MinIO/S3 configuration
+      S3_ENDPOINT: http://minio:9000
+      S3_KEY: minioadmin
+      S3_SECRET: minioadmin
+      S3_BUCKET: careflow-bucket
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+      - minio
+    restart: unless-stopped
+    networks:
+      - careflow-network
+
+  minio:
+    image: minio/minio:latest
+    container_name: careflow-minio
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000" # S3 API
+      - "9001:9001" # Console
+    command: server /data --console-address ":9001"
+    volumes:
+      - ./minio-data:/data
+    restart: unless-stopped
+    networks:
+      - careflow-network
+
+volumes:
+  mongodb-data:
+
+networks:
+  careflow-network:
+    driver: bridge
