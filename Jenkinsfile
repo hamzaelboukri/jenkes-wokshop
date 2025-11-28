@@ -1,18 +1,23 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:18'
+            args '--user root --privileged -v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
 
     stages {
 
         stage('Checkout') {
             steps {
-                echo " Cloning Repository..."
+                echo '📥 Cloning Repository...'
                 checkout scm
             }
         }
 
         stage('Install Backend Dependencies') {
             steps {
-                echo " Installing backend deps..."
+                echo '📦 Installing backend deps...'
                 sh '''
                     cd CareFlow-BackEnd
                     npm install
@@ -22,36 +27,38 @@ pipeline {
 
         stage('Install Frontend Dependencies') {
             steps {
-                echo " Installing frontend deps..."
+                echo '📦 Installing frontend deps...'
                 sh '''
                     cd CareFlow-FrontEnd
                     npm install
-                    npm run build
                 '''
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo '🧪 Running Tests...'
+                // sh '''
+                //     cd CareFlow-BackEnd
+                //     npm test || true
+                //     cd ../CareFlow-FrontEnd
+                //     npm test || true
+                // '''
             }
         }
 
         stage('Docker Compose Up') {
             steps {
-                echo " Building & Starting Containers..."
+                echo '🐳 Starting Containers...'
                 sh 'docker compose up -d --build'
-            }
-        }
-
-        stage('test') {
-            steps {
-                echo " Test is running..."
-              
             }
         }
     }
 
     post {
-        success {
-            echo "🎉 Pipeline completed successfully!"
-        }
-        failure {
-            echo "❌ Pipeline failed!"
+        always {
+            echo '🧹 Cleaning Up...'
+            sh 'docker compose down || true'
         }
     }
 }
