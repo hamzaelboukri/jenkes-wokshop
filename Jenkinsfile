@@ -1,7 +1,8 @@
-
 pipeline {
     agent any
- tools { nodejs} 
+    tools { 
+        nodejs 'NodeJS 20' 
+    }
     stages {
         stage('Checkout') {
             steps {
@@ -13,32 +14,26 @@ pipeline {
         stage('Install Backend Dependencies') {
             steps {
                 echo 'Installing backend deps...'
-                sh '''
-                    cd CareFlow-BackEnd
-                    npm install
-                '''
+                dir('CareFlow-BackEnd') {
+                    sh 'npm install'
+                }
             }
         }
 
         stage('Install Frontend Dependencies') {
             steps {
                 echo 'Installing frontend deps...'
-                sh '''
-                    cd CareFlow-FrontEnd
-                    npm install
-                '''
+                dir('CareFlow-FrontEnd') {
+                    sh 'npm install'
+                }
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running Tests...'
-                // sh '''
-                //     cd CareFlow-BackEnd
-                //     npm test || true
-                //     cd ../CareFlow-FrontEnd
-                //     npm test || true
-                // '''
+                // dir('CareFlow-BackEnd') { sh 'npm test || true' }
+                // dir('CareFlow-FrontEnd') { sh 'npm test || true' }
             }
         }
 
@@ -53,10 +48,7 @@ pipeline {
     post {
         always {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                sh '''
-                    echo 'Cleaning Up...'
-                    docker compose down || true
-                '''
+                sh 'docker compose down || true'
             }
         }
     }
