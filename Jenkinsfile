@@ -1,23 +1,18 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:18'
-            args '--user root --privileged -v /var/run/docker.sock:/var/run/docker.sock'
-        }
-    }   
+    agent any
 
     stages {
 
         stage('Checkout') {
             steps {
-                echo '📥 Cloning Repository...'
+                echo ' Cloning Repository...'
                 checkout scm
             }
         }
 
         stage('Install Backend Dependencies') {
             steps {
-                echo '📦 Installing backend deps...'
+                echo ' Installing backend deps...'
                 sh '''
                     cd CareFlow-BackEnd
                     npm install
@@ -27,7 +22,7 @@ pipeline {
 
         stage('Install Frontend Dependencies') {
             steps {
-                echo '📦 Installing frontend deps...'
+                echo ' Installing frontend deps...'
                 sh '''
                     cd CareFlow-FrontEnd
                     npm install
@@ -37,7 +32,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo '🧪 Running Tests...'
+                echo ' Running Tests...'
                 // sh '''
                 //     cd CareFlow-BackEnd
                 //     npm test || true
@@ -49,7 +44,7 @@ pipeline {
 
         stage('Docker Compose Up') {
             steps {
-                echo '🐳 Starting Containers...'
+                echo ' Starting Containers...'
                 sh 'docker compose up -d --build'
             }
         }
@@ -57,7 +52,7 @@ pipeline {
 
     post {
         always {
-            echo '🧹 Cleaning Up...'
+            echo ' Cleaning Up...'
             sh 'docker compose down || true'
         }
     }
