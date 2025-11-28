@@ -37,6 +37,30 @@ pipeline {
             }
         }
 
+
+        stage('Test_0') {
+    parallel {
+        stage('Backend Tests') {
+            steps {
+                echo 'Running Backend Tests...'
+                // dir('CareFlow-BackEnd') {
+                //     sh 'npm test || true'
+                // }
+            }
+        }
+
+        stage('Frontend Tests') {
+            steps {
+                echo 'Running Frontend Tests...'
+                // dir('CareFlow-FrontEnd') {
+                //     sh 'npm test || true'
+                // }
+            }
+        }
+    }
+}
+
+
        stage('Docker Compose Up') {
     steps {
         echo 'Starting Containers...'
