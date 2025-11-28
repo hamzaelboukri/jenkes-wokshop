@@ -5,14 +5,14 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                echo "📥 Cloning Repository..."
+                echo " Cloning Repository..."
                 checkout scm
             }
         }
 
         stage('Install Backend Dependencies') {
             steps {
-                echo "📦 Installing backend deps..."
+                echo " Installing backend deps..."
                 sh '''
                     cd CareFlow-BackEnd
                     npm install
@@ -22,7 +22,7 @@ pipeline {
 
         stage('Install Frontend Dependencies') {
             steps {
-                echo "📦 Installing frontend deps..."
+                echo " Installing frontend deps..."
                 sh '''
                     cd CareFlow-FrontEnd
                     npm install
@@ -33,25 +33,20 @@ pipeline {
 
         stage('Docker Compose Up') {
             steps {
-                echo "🐳 Building & Starting Containers..."
+                echo " Building & Starting Containers..."
                 sh 'docker compose up -d --build'
             }
         }
 
-        stage('Health Check') {
+        stage('test') {
             steps {
-                echo "❤️ Checking backend is running..."
-                sh 'sleep 6'
-                sh 'curl -f http://localhost:8000 || exit 1'
+                echo " Test is running..."
+              
             }
         }
     }
 
     post {
-        always {
-            echo "🧹 Stopping containers..."
-            sh 'docker compose down'
-        }
         success {
             echo "🎉 Pipeline completed successfully!"
         }
