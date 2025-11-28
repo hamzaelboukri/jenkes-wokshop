@@ -13,20 +13,20 @@ pipeline {
         stage('Install Backend Dependencies') {
             steps {
                 echo ' Installing backend deps...'
-                sh '''
-                    cd CareFlow-BackEnd
-                    npm install
-                '''
+                // sh '''
+                //     cd CareFlow-BackEnd
+                //     npm install
+                // '''
             }
         }
 
         stage('Install Frontend Dependencies') {
             steps {
                 echo ' Installing frontend deps...'
-                sh '''
-                    cd CareFlow-FrontEnd
-                    npm install
-                '''
+                // sh '''
+                //     cd CareFlow-FrontEnd
+                //     npm install
+                // '''
             }
         }
 
