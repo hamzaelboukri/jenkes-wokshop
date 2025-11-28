@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        NODE_HOME = tool name: 'NodeJS-18', type: 'jenkins.plugins.shiningpanda.tools.NodeJSInstallation'
-        PATH = "${NODE_HOME}/bin:${PATH}"
-    }
-
     stages {
         stage('Checkout') {
             steps {
@@ -24,8 +19,6 @@ pipeline {
             }
         }
 
-        
-
         stage('Install Frontend Dependencies') {
             steps {
                 echo 'Installing frontend deps...'
@@ -39,12 +32,12 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running Tests...'
-                // sh '''
-                //     cd CareFlow-BackEnd
-                //     npm test || true
-                //     cd ../CareFlow-FrontEnd
-                //     npm test || true
-                // '''
+                sh '''
+                    cd CareFlow-BackEnd
+                    npm test || true
+                    cd ../CareFlow-FrontEnd
+                    npm test || true
+                '''
             }
         }
 
@@ -58,8 +51,12 @@ pipeline {
 
     post {
         always {
-            echo 'Cleaning Up...'
-            sh 'docker compose down || true'
+            node {
+                sh '''
+                    echo 'Cleaning Up...'
+                    docker compose down || true
+                '''
+            }
         }
     }
 }
