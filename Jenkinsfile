@@ -51,7 +51,7 @@ pipeline {
 
     post {
         always {
-            node {
+            node('any') {
                 sh '''
                     echo 'Cleaning Up...'
                     docker compose down || true
