@@ -24,6 +24,8 @@ pipeline {
             }
         }
 
+        
+
         stage('Install Frontend Dependencies') {
             steps {
                 echo 'Installing frontend deps...'
