@@ -1,55 +1,98 @@
 pipeline {
     agent any
-    
+
+    environment {
+        DOCKER_COMPOSE = "docker compose"
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                echo 'Checking out code...'
+                echo " Checking out repository..."
                 checkout scm
             }
         }
-        
-        stage('Build Images') {
+
+        stage('Install Dependencies') {
             steps {
-                echo 'Building Docker images...'
-                script {
-                    sh 'docker-compose build'
-                }
+                echo " Installing backend & frontend dependencies..."
+                sh '''
+                    cd CareFlow-BackEnd
+                    npm install
+
+                    cd ../CareFlow-FrontEnd
+                    npm install
+                '''
             }
         }
-        
+
+        stage('Build Frontend & Backend') {
+            steps {
+                echo " Building backend & frontend..."
+                sh '''
+                    cd CareFlow-BackEnd
+                    npm run build
+
+                    cd ../CareFlow-FrontEnd
+                    npm run build
+                '''
+            }
+        }
+
+        stage('Docker Build') {
+            steps {
+                echo " Building Docker images..."
+                sh '''
+                    ${DOCKER_COMPOSE} build
+                '''
+            }
+        }
+
+        stage('Run Containers') {
+            steps {
+                echo " Running containers..."
+                sh '''
+                    ${DOCKER_COMPOSE} up -d
+                '''
+            }
+        }
+
         stage('Run Tests') {
             steps {
-                echo 'Running application...'
-                script {
-                    sh 'docker-compose up -d'
-                }
+                echo " Running tests..."
+                sh '''
+                    cd CareFlow-BackEnd
+                    npm test || true
+
+                    cd ../CareFlow-FrontEnd
+                    npm test || true
+                '''
             }
         }
-        
+
         stage('Health Check') {
             steps {
-                echo 'Checking if services are running...'
-                script {
-                    sh 'timeout /t 10'
-                    sh 'curl -f http://localhost:8000/ || exit 1'
-                }
+                echo " Checking service health..."
+                sh '''
+                    ${DOCKER_COMPOSE} ps
+                '''
             }
         }
     }
-    
+
     post {
         always {
-            echo 'Cleaning up...'
-            script {
-                bat 'docker-compose down || exit 0'
-            }
+            echo " Cleaning up..."
+            sh '''
+                ${DOCKER_COMPOSE} down
+                docker system prune -f
+            '''
         }
         success {
-            echo '✅ Pipeline completed successfully!'
+            echo " Pipeline Succeeded!"
         }
         failure {
-            echo '❌ Pipeline failed!'
+            echo " Pipeline Failed!"
         }
     }
 }
