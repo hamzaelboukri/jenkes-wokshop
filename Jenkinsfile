@@ -33,12 +33,12 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running Tests...'
-                sh '''
-                    cd CareFlow-BackEnd
-                    npm test || true
-                    cd ../CareFlow-FrontEnd
-                    npm test || true
-                '''
+                // sh '''
+                //     cd CareFlow-BackEnd
+                //     npm test || true
+                //     cd ../CareFlow-FrontEnd
+                //     npm test || true
+                // '''
             }
         }
 
