@@ -46,10 +46,13 @@ pipeline {
     }
 
     post {
-        always {
-            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                sh 'docker compose down || true'
-            }
-        }
+    success {
+        echo 'Build succeeded, cleaning up...'
+        sh 'docker compose down || true'
     }
+    failure {
+        echo 'Build failed, cleaning up...'
+        sh 'docker compose down || true'
+    }
+}
 }
