@@ -37,12 +37,13 @@ pipeline {
             }
         }
 
-        stage('Docker Compose Up') {
-            steps {
-                echo 'Starting Containers...'
-                sh 'docker compose up -d --build'
-            }
-        }
+       stage('Docker Compose Up') {
+    steps {
+        echo 'Starting Containers...'
+        sh 'docker-compose -f C:/Users/Youcode/Desktop/projet/jenkis-workshop/docker-compose.yml up -d --build'
+    }
+}
+
     }
 
     post {
