@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -51,7 +52,7 @@ pipeline {
 
     post {
         always {
-            node('any') {
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 sh '''
                     echo 'Cleaning Up...'
                     docker compose down || true
