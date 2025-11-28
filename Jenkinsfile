@@ -40,7 +40,7 @@ pipeline {
         stage('Docker Compose Up') {
             steps {
                 echo 'Starting Containers...'
-                sh 'docker-compose up -d --build'
+                sh 'docker compose up -d --build'
             }
         }
     }
@@ -52,7 +52,7 @@ pipeline {
     }
     failure {
         echo 'Build failed, cleaning up...'
-        sh 'docker-compose down || true'
+        sh 'docker compose down || true'
     }
 }
 }
