@@ -1,6 +1,5 @@
 # Dependencies
 **/node_modules/
-**/package-lock.json
 
 # Build outputs
 **/dist/
@@ -27,9 +26,6 @@ Thumbs.db
 
 # MinIO data
 **/minio-data/
-
-# Docker
-**/.dockerignore
 
 # Testing
 **/coverage/

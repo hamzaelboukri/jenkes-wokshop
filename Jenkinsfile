@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Building Docker images...'
                 script {
-                    bat 'docker-compose build'
+                    sh 'docker-compose build'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Running application...'
                 script {
-                    bat 'docker-compose up -d'
+                    sh 'docker-compose up -d'
                 }
             }
         }
@@ -31,8 +31,8 @@ pipeline {
             steps {
                 echo 'Checking if services are running...'
                 script {
-                    bat 'timeout /t 10'
-                    bat 'curl -f http://localhost:8000/ || exit 1'
+                    sh 'timeout /t 10'
+                    sh 'curl -f http://localhost:8000/ || exit 1'
                 }
             }
         }

@@ -1,0 +1,481 @@
+<mxfile host="65bd71144e">
+    <diagram id="PJ21AYXsNNI0RP0tGNTL" name="Page-1">
+        <mxGraphModel dx="1016" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;br&gt;&lt;h1 style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: light-dark(rgba(59,130,246,.5), #4c89ec); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border: 0px solid; margin: 0px 0px 12px; --ant-blue: light-dark(#0779db, #41a3f7); --ant-purple: light-dark(#504DC1, #9e9bff); --ant-cyan: light-dark(#13C2C2, #008686); --ant-green: light-dark(#32B546, #1e8f2f); --ant-magenta: light-dark(#EB2F96, #ff73cc); --ant-pink: light-dark(#EB2F96, #ff73cc); --ant-red: light-dark(#e30039, #ff93c4); --ant-orange: light-dark(#F46C10, #df6a1b); --ant-yellow: light-dark(#FFD007, #6a4200); --ant-volcano: light-dark(#FA541C, #fe6f3f); --ant-geekblue: light-dark(#2F54EB, #80a0ff); --ant-gold: light-dark(#FAAD14, #914f00); --ant-lime: light-dark(#A0D911, #306100); --ant-color-primary: light-dark(#504dc1, #9e9bff); --ant-color-success: light-dark(#32b546, #1e8f2f); --ant-color-warning: light-dark(#f46c10, #df6a1b); --ant-color-error: light-dark(#e30039, #ff93c4); --ant-color-info: light-dark(#504dc1, #9e9bff); --ant-color-link: light-dark(#504dc1, #9e9bff); --ant-color-text-base: light-dark(#000, #000000); --ant-color-bg-base: light-dark(#fff, #000000); --ant-font-family: &#39;Nunito Sans&#39;, &#39;sans-serif&#39;; --ant-font-family-code: &#39;SFMono-Regular&#39;, Consolas, &#39;Liberation Mono&#39;, Menlo, Courier, monospace; --ant-font-size: 14px; --ant-line-width: 1px; --ant-line-type: solid; --ant-motion-ease-out-circ: cubic-bezier(0.08, 0.82, 0.17, 1); --ant-motion-ease-in-out-circ: cubic-bezier(0.78, 0.14, 0.15, 0.86); --ant-motion-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1); --ant-motion-ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1); --ant-motion-ease-out-back: cubic-bezier(0.12, 0.4, 0.29, 1.46); --ant-motion-ease-in-back: cubic-bezier(0.71, -0.46, 0.88, 0.6); --ant-motion-ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06); --ant-motion-ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1); --ant-border-radius: 8px; --ant-size-unit: 4px; --ant-size-step: 4px; --ant-size-popup-arrow: 16px; --ant-control-height: 32px; --ant-z-index-base: 0; --ant-z-index-popup-base: 1000; --ant-opacity-image: 1; --ant-border-radius-xs: 2px; --ant-border-radius-sm: 4px; --ant-border-radius-lg: 14px; --ant-font-size-heading-1: 24px; --ant-font-size-heading-2: 20px; --ant-font-size-heading-3: 18px; --ant-font-size-heading-4: 16px; --ant-font-size-heading-5: 14px; --ant-font-weight-strong: 700; --ant-blue-1: light-dark(#e6f7ff, #101e25); --ant-blue-2: light-dark(#abe3ff, #0b3b53); --ant-blue-3: light-dark(#82d1ff, #0c5077); --ant-blue-4: light-dark(#56b5f5, #1a6ca3); --ant-blue-5: light-dark(#2c97e8, #2c88cd); --ant-blue-6: light-dark(#0779db, #41a3f7); --ant-blue-7: light-dark(#005bb5, #67b5ff); --ant-blue-8: light-dark(#00438f, #8ac3ff); --ant-blue-9: light-dark(#002d69, #a8cfff); --ant-blue-10: light-dark(#001b42, #c4dbfd); --ant-purple-1: light-dark(#f3f0ff, #1f1c29); --ant-purple-2: light-dark(#e9e6f5, #262431); --ant-purple-3: light-dark(#d0cce8, #3d3951); --ant-purple-4: light-dark(#a49edb, #605b8f); --ant-purple-5: light-dark(#7a74cf, #817cca); --ant-purple-6: light-dark(#504dc1, #9e9bff); --ant-purple-7: light-dark(#36369c, #b2b2ff); --ant-purple-8: light-dark(#232675, #c1c4ff); --ant-purple-9: light-dark(#14184f, #d0d3ff); --ant-purple-10: light-dark(#0a0d29, #dde0f8); --ant-cyan-1: light-dark(#e6fffb, #061b18); --ant-cyan-2: light-dark(#b5f5ec, #00332b); --ant-cyan-3: light-dark(#87e8de, #004a42); --ant-cyan-4: light-dark(#5cdbd3, #006059); --ant-cyan-5: light-dark(#36cfc9, #00746f); --ant-cyan-6: light-dark(#13c2c2, #008686); --ant-cyan-7: light-dark(#08979c, #249fa3); --ant-cyan-8: light-dark(#006d75, #58b6bc); --ant-cyan-9: light-dark(#00474f, #8cc9d0); --ant-cyan-10: light-dark(#002329, #bddbe0); --ant-green-1: light-dark(#e6f5e6, #142114); --ant-green-2: light-dark(#d5e8d6, #1f2f20); --ant-green-3: light-dark(#a7dba9, #1d4a1f); --ant-green-4: light-dark(#7ccf83, #1b6322); --ant-green-5: light-dark(#55c262, #1c7a27); --ant-green-6: light-dark(#32b546, #1e8f2f); --ant-green-7: light-dark(#218f35, #47a658); --ant-green-8: light-dark(#136925, #71bb81); --ant-green-9: light-dark(#094217, #9dcea9); --ant-green-10: light-dark(#031c0a, #cbe1d1); --ant-magenta-1: light-dark(#fff0f6, #26191e); --ant-magenta-2: light-dark(#ffd6e7, #472433); --ant-magenta-3: light-dark(#ffadd2, #7c3655); --ant-magenta-4: light-dark(#ff85c0, #b0477a); --ant-magenta-5: light-dark(#f759ab, #e55da4); --ant-magenta-6: light-dark(#eb2f96, #ff73cc); --ant-magenta-7: light-dark(#c41d7f, #ff8bdf); --ant-magenta-8: light-dark(#9e1068, #ffa0eb); --ant-magenta-9: light-dark(#780650, #ffb5f5); --ant-magenta-10: light-dark(#520339, #ffc7f6); --ant-pink-1: light-dark(#fff0f6, #26191e); --ant-pink-2: light-dark(#ffd6e7, #472433); --ant-pink-3: light-dark(#ffadd2, #7c3655); --ant-pink-4: light-dark(#ff85c0, #b0477a); --ant-pink-5: light-dark(#f759ab, #e55da4); --ant-pink-6: light-dark(#eb2f96, #ff73cc); --ant-pink-7: light-dark(#c41d7f, #ff8bdf); --ant-pink-8: light-dark(#9e1068, #ffa0eb); --ant-pink-9: light-dark(#780650, #ffb5f5); --ant-pink-10: light-dark(#520339, #ffc7f6); --ant-red-1: light-dark(#ffe6e8, #331e1f); --ant-red-2: light-dark(#ffa3ae, #8d3e47); --ant-red-3: light-dark(#ff7a8e, #c35162); --ant-red-4: light-dark(#fc5170, #f8657f); --ant-red-5: light-dark(#f02652, #ff7da2); --ant-red-6: light-dark(#e30039, #ff93c4); --ant-red-7: light-dark(#bd0035, #ffa2cf); --ant-red-8: light-dark(#960030, #ffb0d9); --ant-red-9: light-dark(#700027, #ffbfe0); --ant-red-10: light-dark(#4a001c, #ffcfe7); --ant-orange-1: light-dark(#fff4e6, #22190d); --ant-orange-2: light-dark(#ffdcb5, #462807); --ant-orange-3: light-dark(#ffc68c, #663503); --ant-orange-4: light-dark(#ffac63, #8b4405); --ant-orange-5: light-dark(#ff903b, #b2530a); --ant-orange-6: light-dark(#f46c10, #df6a1b); --ant-orange-7: light-dark(#cf4e04, #f38444); --ant-orange-8: light-dark(#a83800, #fb9b6b); --ant-orange-9: light-dark(#822700, #feaf8e); --ant-orange-10: light-dark(#5c1800, #fec3af); --ant-yellow-1: light-dark(#ffffe6, #151500); --ant-yellow-2: light-dark(#fffbab, #211e00); --ant-yellow-3: light-dark(#fff582, #2d2500); --ant-yellow-4: light-dark(#ffec59, #3e2e00); --ant-yellow-5: light-dark(#ffe030, #523700); --ant-yellow-6: light-dark(#ffd007, #6a4200); --ant-yellow-7: light-dark(#d9aa00, #875f00); --ant-yellow-8: light-dark(#b38600, #a17a07); --ant-yellow-9: light-dark(#8c6500, #b6953e); --ant-yellow-10: light-dark(#664600, #caae72); --ant-volcano-1: light-dark(#fff2e8, #251a11); --ant-volcano-2: light-dark(#ffd8bf, #492812); --ant-volcano-3: light-dark(#ffbb96, #723818); --ant-volcano-4: light-dark(#ff9c6e, #9e4921); --ant-volcano-5: light-dark(#ff7a45, #cc5a2c); --ant-volcano-6: light-dark(#fa541c, #fe6f3f); --ant-volcano-7: light-dark(#d4380d, #ff8964); --ant-volcano-8: light-dark(#ad2102, #ffa187); --ant-volcano-9: light-dark(#871400, #ffb4a3); --ant-volcano-10: light-dark(#610b00, #ffc6bd); --ant-geekblue-1: light-dark(#f0f5ff, #161b23); --ant-geekblue-2: light-dark(#d6e4ff, #1f2b42); --ant-geekblue-3: light-dark(#adc6ff, #304576); --ant-geekblue-4: light-dark(#85a5ff, #4460ad); --ant-geekblue-5: light-dark(#597ef7, #6080e8); --ant-geekblue-6: light-dark(#2f54eb, #80a0ff); --ant-geekblue-7: light-dark(#1d39c4, #9db5ff); --ant-geekblue-8: light-dark(#10239e, #b6c6ff); --ant-geekblue-9: light-dark(#061178, #cdd6ff); --ant-geekblue-10: light-dark(#030852, #dadfff); --ant-gold-1: light-dark(#fffbe6, #191604); --ant-gold-2: light-dark(#fff1b8, #2c2000); --ant-gold-3: light-dark(#ffe58f, #3f2900); --ant-gold-4: light-dark(#ffd666, #573400); --ant-gold-5: light-dark(#ffc53d, #724000); --ant-gold-6: light-dark(#faad14, #914f00); --ant-gold-7: light-dark(#d48806, #ae6d00); --ant-gold-8: light-dark(#ad6800, #c3872e); --ant-gold-9: light-dark(#874d00, #d19f5d); --ant-gold-10: light-dark(#613400, #dcb689); --ant-lime-1: light-dark(#fcffe6, #141601); --ant-lime-2: light-dark(#f4ffb8, #161f00); --ant-lime-3: light-dark(#eaff8f, #162800); --ant-lime-4: light-dark(#d3f261, #203b00); --ant-lime-5: light-dark(#bae637, #274d00); --ant-lime-6: light-dark(#a0d911, #306100); --ant-lime-7: light-dark(#7cb305, #4d7d00); --ant-lime-8: light-dark(#5b8c00, #6e9820); --ant-lime-9: light-dark(#3f6600, #8eb058); --ant-lime-10: light-dark(#254000, #b1c891); --ant-color-text: light-dark(rgba(0,0,0,0.88), #ededed); --ant-color-text-secondary: light-dark(rgba(0,0,0,0.65), #ededed); --ant-color-text-tertiary: light-dark(rgba(0,0,0,0.45), #ededed); --ant-color-text-quaternary: light-dark(rgba(0,0,0,0.25), #ededed); --ant-color-fill: light-dark(rgba(0,0,0,0.15), #ededed); --ant-color-fill-secondary: light-dark(rgba(0,0,0,0.06), #ededed); --ant-color-fill-tertiary: light-dark(rgba(0,0,0,0.04), #ededed); --ant-color-fill-quaternary: light-dark(rgba(0,0,0,0.02), #ededed); --ant-color-bg-solid: light-dark(rgb(0,0,0), #ededed); --ant-color-bg-solid-hover: light-dark(rgba(0,0,0,0.75), #ededed); --ant-color-bg-solid-active: light-dark(rgba(0,0,0,0.95), #ededed); --ant-color-bg-layout: light-dark(#f5f5f5, #1a1a1a); --ant-color-bg-container: light-dark(#ffffff, #121212); --ant-color-bg-elevated: light-dark(#ffffff, #121212); --ant-color-bg-spotlight: light-dark(rgba(0,0,0,0.85), #ededed); --ant-color-bg-blur: transparent; --ant-color-border: light-dark(#d9d9d9, #333333); --ant-color-border-secondary: light-dark(#f0f0f0, #1f1f1f); --ant-color-primary-bg: light-dark(#f3f0ff, #1f1c29); --ant-color-primary-bg-hover: light-dark(#e9e6f5, #262431); --ant-color-primary-border: light-dark(#d0cce8, #3d3951); --ant-color-primary-border-hover: light-dark(#a49edb, #605b8f); --ant-color-primary-hover: light-dark(#7a74cf, #817cca); --ant-color-primary-active: light-dark(#36369c, #b2b2ff); --ant-color-primary-text-hover: light-dark(#7a74cf, #817cca); --ant-color-primary-text: light-dark(#504dc1, #9e9bff); --ant-color-primary-text-active: light-dark(#36369c, #b2b2ff); --ant-color-success-bg: light-dark(#e6f5e6, #142114); --ant-color-success-bg-hover: light-dark(#d5e8d6, #1f2f20); --ant-color-success-border: light-dark(#a7dba9, #1d4a1f); --ant-color-success-border-hover: light-dark(#7ccf83, #1b6322); --ant-color-success-hover: light-dark(#7ccf83, #1b6322); --ant-color-success-active: light-dark(#218f35, #47a658); --ant-color-success-text-hover: light-dark(#55c262, #1c7a27); --ant-color-success-text: light-dark(#32b546, #1e8f2f); --ant-color-success-text-active: light-dark(#218f35, #47a658); --ant-color-error-bg: light-dark(#ffe6e8, #331e1f); --ant-color-error-bg-hover: light-dark(#ffa3ae, #8d3e47); --ant-color-error-bg-filled-hover: light-dark(#ffb0bb, #7c3842); --ant-color-error-bg-active: light-dark(#ff7a8e, #c35162); --ant-color-error-border: light-dark(#ff7a8e, #c35162); --ant-color-error-border-hover: light-dark(#fc5170, #f8657f); --ant-color-error-hover: light-dark(#f02652, #ff7da2); --ant-color-error-active: light-dark(#bd0035, #ffa2cf); --ant-color-error-text-hover: light-dark(#f02652, #ff7da2); --ant-color-error-text: light-dark(#e30039, #ff93c4); --ant-color-error-text-active: light-dark(#bd0035, #ffa2cf); --ant-color-warning-bg: light-dark(#fff4e6, #22190d); --ant-color-warning-bg-hover: light-dark(#ffdcb5, #462807); --ant-color-warning-border: light-dark(#ffc68c, #663503); --ant-color-warning-border-hover: light-dark(#ffac63, #8b4405); --ant-color-warning-hover: light-dark(#ffac63, #8b4405); --ant-color-warning-active: light-dark(#cf4e04, #f38444); --ant-color-warning-text-hover: light-dark(#ff903b, #b2530a); --ant-color-warning-text: light-dark(#f46c10, #df6a1b); --ant-color-warning-text-active: light-dark(#cf4e04, #f38444); --ant-color-info-bg: light-dark(#f3f0ff, #1f1c29); --ant-color-info-bg-hover: light-dark(#e9e6f5, #262431); --ant-color-info-border: light-dark(#d0cce8, #3d3951); --ant-color-info-border-hover: light-dark(#a49edb, #605b8f); --ant-color-info-hover: light-dark(#a49edb, #605b8f); --ant-color-info-active: light-dark(#36369c, #b2b2ff); --ant-color-info-text-hover: light-dark(#7a74cf, #817cca); --ant-color-info-text: light-dark(#504dc1, #9e9bff); --ant-color-info-text-active: light-dark(#36369c, #b2b2ff); --ant-color-link-hover: light-dark(#a49edb, #605b8f); --ant-color-link-active: light-dark(#36369c, #b2b2ff); --ant-color-bg-mask: light-dark(rgba(0,0,0,0.45), #ededed); --ant-color-white: light-dark(#fff, #000000); --ant-font-size-sm: 12px; --ant-font-size-lg: 16px; --ant-font-size-xl: 20px; --ant-line-height: 1.5714285714285714; --ant-line-height-lg: 1.5; --ant-line-height-sm: 1.6666666666666667; --ant-font-height: 22px; --ant-font-height-lg: 24px; --ant-font-height-sm: 20px; --ant-line-height-heading-1: 1.2105263157894737; --ant-line-height-heading-2: 1.2666666666666666; --ant-line-height-heading-3: 1.3333333333333333; --ant-line-height-heading-4: 1.4; --ant-line-height-heading-5: 1.5; --ant-size-xxl: 48px; --ant-size-xl: 32px; --ant-size-lg: 24px; --ant-size-md: 20px; --ant-size-ms: 16px; --ant-size: 16px; --ant-size-sm: 12px; --ant-size-xs: 8px; --ant-size-xxs: 4px; --ant-control-height-sm: 24px; --ant-control-height-xs: 16px; --ant-control-height-lg: 40px; --ant-motion-duration-fast: 0.1s; --ant-motion-duration-mid: 0.2s; --ant-motion-duration-slow: 0.3s; --ant-line-width-bold: 2px; --ant-border-radius-outer: 6px; --ant-color-fill-content: light-dark(rgba(0,0,0,0.06), #ededed); --ant-color-fill-content-hover: light-dark(rgba(0,0,0,0.15), #ededed); --ant-color-fill-alter: light-dark(rgba(0,0,0,0.02), #ededed); --ant-color-bg-container-disabled: light-dark(rgba(0,0,0,0.04), #ededed); --ant-color-border-bg: light-dark(#ffffff, #121212); --ant-color-split: light-dark(rgba(5,5,5,0.06), #e9e9e9); --ant-color-text-placeholder: light-dark(rgba(0,0,0,0.25), #ededed); --ant-color-text-disabled: light-dark(rgba(0,0,0,0.25), #ededed); --ant-color-text-heading: light-dark(rgba(0,0,0,0.88), #ededed); --ant-color-text-label: light-dark(rgba(0,0,0,0.65), #ededed); --ant-color-text-description: light-dark(rgba(0,0,0,0.45), #ededed); --ant-color-text-light-solid: light-dark(#fff, #000000); --ant-color-highlight: light-dark(#e30039, #ff93c4); --ant-color-bg-text-hover: light-dark(rgba(0,0,0,0.06), #ededed); --ant-color-bg-text-active: light-dark(rgba(0,0,0,0.15), #ededed); --ant-color-icon: light-dark(rgba(0,0,0,0.45), #ededed); --ant-color-icon-hover: light-dark(rgba(0,0,0,0.88), #ededed); --ant-color-error-outline: light-dark(rgba(255,5,25,0.1), #ff8b9c); --ant-color-warning-outline: light-dark(rgba(255,145,5,0.1), #b85a00); --ant-font-size-icon: 12px; --ant-line-width-focus: 3px; --ant-control-outline-width: 2px; --ant-control-interactive-size: 16px; --ant-control-item-bg-hover: light-dark(rgba(0,0,0,0.04), #ededed); --ant-control-item-bg-active: light-dark(#f3f0ff, #1f1c29); --ant-control-item-bg-active-hover: light-dark(#e9e6f5, #262431); --ant-control-item-bg-active-disabled: light-dark(rgba(0,0,0,0.15), #ededed); --ant-control-tmp-outline: light-dark(rgba(0,0,0,0.02), #ededed); --ant-control-outline: light-dark(rgba(55,5,255,0.06), #e3b8ff); --ant-opacity-loading: 0.65; --ant-link-decoration: none; --ant-link-hover-decoration: none; --ant-link-focus-decoration: none; --ant-control-padding-horizontal: 12px; --ant-control-padding-horizontal-sm: 8px; --ant-padding-xxs: 4px; --ant-padding-xs: 8px; --ant-padding-sm: 12px; --ant-padding: 16px; --ant-padding-md: 20px; --ant-padding-lg: 24px; --ant-padding-xl: 32px; --ant-padding-content-horizontal-lg: 24px; --ant-padding-content-vertical-lg: 16px; --ant-padding-content-horizontal: 16px; --ant-padding-content-vertical: 12px; --ant-padding-content-horizontal-sm: 16px; --ant-padding-content-vertical-sm: 8px; --ant-margin-xxs: 4px; --ant-margin-xs: 8px; --ant-margin-sm: 12px; --ant-margin: 16px; --ant-margin-md: 20px; --ant-margin-lg: 24px; --ant-margin-xl: 32px; --ant-margin-xxl: 48px; --ant-box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),&lt;br/&gt;      0 3px 6px -4px rgba(0, 0, 0, 0.12),&lt;br/&gt;      0 9px 28px 8px rgba(0, 0, 0, 0.05); --ant-box-shadow-secondary: 0 6px 16px 0 rgba(0, 0, 0, 0.08),&lt;br/&gt;      0 3px 6px -4px rgba(0, 0, 0, 0.12),&lt;br/&gt;      0 9px 28px 8px rgba(0, 0, 0, 0.05); --ant-box-shadow-tertiary: 0 1px 2px 0 rgba(0, 0, 0, 0.03),&lt;br/&gt;      0 1px 6px -1px rgba(0, 0, 0, 0.02),&lt;br/&gt;      0 2px 4px 0 rgba(0, 0, 0, 0.02); --ant-box-shadow-popover-arrow: 2px 2px 5px rgba(0, 0, 0, 0.05); --ant-box-shadow-card: 0 1px 2px -2px rgba(0,0,0,0.16),&lt;br/&gt;      0 3px 6px 0 rgba(0,0,0,0.12),&lt;br/&gt;      0 5px 12px 4px rgba(0,0,0,0.09); --ant-box-shadow-drawer-right: -6px 0 16px 0 rgba(0, 0, 0, 0.08),&lt;br/&gt;      -3px 0 6px -4px rgba(0, 0, 0, 0.12),&lt;br/&gt;      -9px 0 28px 8px rgba(0, 0, 0, 0.05); --ant-box-shadow-drawer-left: 6px 0 16px 0 rgba(0, 0, 0, 0.08),&lt;br/&gt;      3px 0 6px -4px rgba(0, 0, 0, 0.12),&lt;br/&gt;      9px 0 28px 8px rgba(0, 0, 0, 0.05); --ant-box-shadow-drawer-up: 0 6px 16px 0 rgba(0, 0, 0, 0.08),&lt;br/&gt;      0 3px 6px -4px rgba(0, 0, 0, 0.12),&lt;br/&gt;      0 9px 28px 8px rgba(0, 0, 0, 0.05); --ant-box-shadow-drawer-down: 0 -6px 16px 0 rgba(0, 0, 0, 0.08),&lt;br/&gt;      0 -3px 6px -4px rgba(0, 0, 0, 0.12),&lt;br/&gt;      0 -9px 28px 8px rgba(0, 0, 0, 0.05); --ant-box-shadow-tabs-overflow-left: inset 10px 0 8px -8px rgba(0, 0, 0, 0.08); --ant-box-shadow-tabs-overflow-right: inset -10px 0 8px -8px rgba(0, 0, 0, 0.08); --ant-box-shadow-tabs-overflow-top: inset 0 10px 8px -8px rgba(0, 0, 0, 0.08); --ant-box-shadow-tabs-overflow-bottom: inset 0 -10px 8px -8px rgba(0, 0, 0, 0.08); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; color: rgba(0, 0, 0, 0.88); word-break: break-word; --ant-typography-title-margin-top: 1.2em; --ant-typography-title-margin-bottom: 0.5em; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; line-height: 100%;&quot; class=&quot;ant-typography !mb-0 sol&quot;&gt;&lt;font style=&quot;font-size: 17px; line-height: 100%; font-weight: normal;&quot;&gt;CareFlow&amp;nbsp;&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=90;height=40;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="10" width="1080" height="1500" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; font-weight: 700; text-align: start; text-wrap-mode: wrap;&quot;&gt;utilisateur&lt;/span&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-20" y="150" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;M&#39;inscrire avec email et mot de passe sécurisé&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="120" width="300" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;Me connecter avec mes identifiants&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="339" y="177" width="255" height="33" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;Réinitialiser mon mot de passe si je l&#39;ai oublié&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="326" y="226" width="281" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="250" y="280" as="sourcePoint"/>
+                        <mxPoint x="300" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="6" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="250" y="270" as="sourcePoint"/>
+                        <mxPoint x="300" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="7" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="270" as="sourcePoint"/>
+                        <mxPoint x="290" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; font-weight: 700; text-align: start; text-wrap-mode: wrap;&quot;&gt;infirmier&lt;/span&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="-20" y="336" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Pl&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;anifier des rendez-vous pour les patients&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="314" y="290" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: transparent; font-size: 14px;&quot;&gt;&lt;font face=&quot;Nunito Sans, sans-serif&quot; color=&quot;rgba(0, 0, 0, 0.88)&quot;&gt;C&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; background-color: transparent;&quot;&gt;onsulter les informations patien&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="346.75" y="336" width="197.5" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); background-color: transparent; font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; color: rgba(0, 0, 0, 0.88);&quot;&gt;V&lt;/span&gt;&lt;span style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); background-color: transparent; font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; color: rgba(0, 0, 0, 0.88);&quot;&gt;érifier les disponibilités des praticiens&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="310.5" y="385" width="270" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;Nunito Sans, sans-serif&quot; color=&quot;rgba(0, 0, 0, 0.88)&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;V&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; background-color: transparent;&quot;&gt;érifier automatiquement les conflits&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="319.5" y="425" width="235" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;Nunito Sans, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;C&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; background-color: transparent;&quot;&gt;onsulter l&#39;agenda complet de la clinique&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="329.25" y="473" width="235" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px;&quot;&gt;Gérer les annulations&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="382.75" y="530" width="136.25" height="37" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="11" target="12" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="190" y="450" as="sourcePoint"/>
+                        <mxPoint x="240" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="11" target="13" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="220" y="500" as="sourcePoint"/>
+                        <mxPoint x="270" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="11" target="14" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="200" y="520" as="sourcePoint"/>
+                        <mxPoint x="250" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="11" target="15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="220" y="560" as="sourcePoint"/>
+                        <mxPoint x="270" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="11" target="16" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="220" y="610" as="sourcePoint"/>
+                        <mxPoint x="270" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="11" target="17" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="220" y="690" as="sourcePoint"/>
+                        <mxPoint x="270" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; font-weight: 700; text-align: start; text-wrap-mode: wrap;&quot;&gt;patient&lt;/span&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="-20" y="671" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Me&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;ttre à jour mon profil (coordonnées, allergies)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="262" y="590" width="318.5" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="V&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;oir les disponibilités d&#39;un médecin&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="284.25" y="640" width="260" height="31" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="R&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;éserver un R.V&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="333" y="678" width="142" height="33" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="M&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;odifier ou annuler mon R.V&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="715" width="193" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="C&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;onsulter mes rendez-vous passés et à venir&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="263" y="761" width="260" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="R&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;ecevoir un rappel par email 24h avant&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="275.5" y="802" width="235" height="49" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="26" target="27" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="830" as="sourcePoint"/>
+                        <mxPoint x="290" y="780" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="" style="endArrow=none;html=1;entryX=0.002;entryY=0.682;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="26" target="28" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="270" y="870" as="sourcePoint"/>
+                        <mxPoint x="320" y="820" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="26" target="29" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="270" y="960" as="sourcePoint"/>
+                        <mxPoint x="320" y="910" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="26" target="30" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="220" y="980" as="sourcePoint"/>
+                        <mxPoint x="270" y="930" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="" style="endArrow=none;html=1;entryX=0.009;entryY=0.382;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="26" target="31" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="230" y="1020" as="sourcePoint"/>
+                        <mxPoint x="280" y="970" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="26" target="32" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="250" y="1040" as="sourcePoint"/>
+                        <mxPoint x="300" y="990" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; font-weight: 700; text-align: start; text-wrap-mode: wrap;&quot;&gt;médecin&lt;/span&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="930" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="C&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;onsulter le profil complet d&#39;un patient&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="271" y="870" width="252" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="C&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;réer un R.V pour un patient&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="914" width="197" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="V&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;érifier mes disponibilités et celles de mes collègues&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="242.75" y="970" width="322.5" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;Modifier ou annuler un R.V&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="1018" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="M&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;arquer un R.V comme complété&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="297.5" y="1063" width="211" height="49" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="R&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;ecevoir une notification si un rendez-vous approche&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="254" y="1120" width="300" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" target="43" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="93" y="953.9951351351352" as="sourcePoint"/>
+                        <mxPoint x="263" y="898.86" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" target="44" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="1040" as="sourcePoint"/>
+                        <mxPoint x="170" y="990" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" target="45" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="160" y="1080" as="sourcePoint"/>
+                        <mxPoint x="210" y="1030" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" target="46" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="1100" as="sourcePoint"/>
+                        <mxPoint x="220" y="1050" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="" style="endArrow=none;html=1;entryX=0.032;entryY=0.38;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="42" target="47" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="210" y="1140" as="sourcePoint"/>
+                        <mxPoint x="260" y="1090" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="42" target="48" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="190" y="1130" as="sourcePoint"/>
+                        <mxPoint x="240" y="1080" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; font-weight: 700; text-align: start; text-wrap-mode: wrap;&quot;&gt;administrateur&lt;/span&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry y="1310" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="C&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;réer des comptes (médecins, infirmiers, patients)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="242.75" y="1190" width="314" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="S&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;uspendre ou réactiver des comptes&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="292.5" y="1245" width="217" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="C&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;onsulter la liste des utilisateurs avec filtres&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="266.25" y="1303" width="274" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;Créer et gérer des dossiers patients&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="298.75" y="1360" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="V&lt;span style=&quot;color: rgba(0, 0, 0, 0.88); font-family: &amp;quot;Nunito Sans&amp;quot;, &amp;quot;sans-serif&amp;quot;; font-size: 14px; text-align: start;&quot;&gt;oir tous les rendez-vous de la clinique&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="276.5" y="1420" width="234" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="55" target="56" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="30" y="1260" as="sourcePoint"/>
+                        <mxPoint x="390" y="1200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="62" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="55" target="57" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="1380" as="sourcePoint"/>
+                        <mxPoint x="190" y="1330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="55" target="58" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="160" y="1390" as="sourcePoint"/>
+                        <mxPoint x="210" y="1340" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="64" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="55" target="59" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="1420" as="sourcePoint"/>
+                        <mxPoint x="220" y="1370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="55" target="60" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="150" y="1460" as="sourcePoint"/>
+                        <mxPoint x="200" y="1410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="authentication" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="480" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="7" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="580" y="350" as="sourcePoint"/>
+                        <mxPoint x="740" y="350" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="760" y="270"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.444;entryY=0.057;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="12" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="640" y="440" as="sourcePoint"/>
+                        <mxPoint x="800" y="440" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="730" y="310"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="71" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.356;entryY=0.044;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="13" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="670" y="420" as="sourcePoint"/>
+                        <mxPoint x="810" y="490" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="710" y="340"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="72" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="14" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="540" y="450" as="sourcePoint"/>
+                        <mxPoint x="700" y="450" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="720" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="73" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="15" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="640" y="480" as="sourcePoint"/>
+                        <mxPoint x="800" y="480" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="720" y="420"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="74" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.083;entryY=0.254;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="16" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="680" y="570" as="sourcePoint"/>
+                        <mxPoint x="840" y="570" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="690" y="460"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="75" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.015;entryY=0.376;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="17" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="680" y="570" as="sourcePoint"/>
+                        <mxPoint x="840" y="570" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="76" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="27" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="680" y="590" as="sourcePoint"/>
+                        <mxPoint x="840" y="590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="77" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.02;entryY=0.62;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="28" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="690" y="700" as="sourcePoint"/>
+                        <mxPoint x="850" y="700" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="78" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.055;entryY=0.719;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="29" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="650" y="710" as="sourcePoint"/>
+                        <mxPoint x="810" y="710" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="660" y="640"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="30" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="610" y="710" as="sourcePoint"/>
+                        <mxPoint x="770" y="710" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="720"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.214;entryY=0.938;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="31" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="580" y="720" as="sourcePoint"/>
+                        <mxPoint x="740" y="720" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="779"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.294;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="32" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="540" y="830" as="sourcePoint"/>
+                        <mxPoint x="700" y="830" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="600" y="830"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.368;entryY=1.027;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="43" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="570" y="890" as="sourcePoint"/>
+                        <mxPoint x="730" y="890" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="620" y="910"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="83" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.443;entryY=1.057;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="44" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="720" y="910" as="sourcePoint"/>
+                        <mxPoint x="880" y="910" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="640" y="960"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="84" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.547;entryY=1.047;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="45" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="560" y="1090" as="sourcePoint"/>
+                        <mxPoint x="720" y="1090" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="650" y="1000"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.617;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="46" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="650" y="1100" as="sourcePoint"/>
+                        <mxPoint x="810" y="1100" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="680" y="1050"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="85" vertex="1" connectable="0">
+                    <mxGeometry x="-0.5218" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="86" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.714;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="47" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="610" y="1100" as="sourcePoint"/>
+                        <mxPoint x="770" y="1100" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="710" y="1110"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="87" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.796;entryY=0.948;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="48" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="650" y="1120" as="sourcePoint"/>
+                        <mxPoint x="810" y="1120" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="790" y="1200"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="56" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="660" y="1190" as="sourcePoint"/>
+                        <mxPoint x="820" y="1190" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="840" y="1230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="89" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.905;entryY=0.868;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="57" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="670" y="1280" as="sourcePoint"/>
+                        <mxPoint x="830" y="1280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="890" y="1270"/>
+                            <mxPoint x="940" y="630"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="90" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.975;entryY=0.759;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="58" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="760" y="1340" as="sourcePoint"/>
+                        <mxPoint x="920" y="540" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="960" y="1320"/>
+                            <mxPoint x="960" y="610"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="91" value="includ" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1.004;entryY=0.582;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="59" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="760" y="1410" as="sourcePoint"/>
+                        <mxPoint x="920" y="520" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1010" y="1370"/>
+                            <mxPoint x="1010" y="590"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.959;entryY=0.337;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="60" target="66" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="770" y="1470" as="sourcePoint"/>
+                        <mxPoint x="930" y="515" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1090" y="1430"/>
+                            <mxPoint x="1030" y="570"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

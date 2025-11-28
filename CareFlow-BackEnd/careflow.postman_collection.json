@@ -1,0 +1,1141 @@
+{
+	"info": {
+		"_postman_id": "5c2ef63f-ce68-45fe-8d5d-340daa2f8d49",
+		"name": "careflow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33164264"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"medecinz@example.com\",\r\n  \"password\": \"Password123!\",\r\n  \"role\": \"medecin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginAdmin",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68ebddeaffde12dbc5bac6c8\",\r\n  \"email\": \"ameksakhadija026@gmail.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760437050,\r\n  \"exp\": 1760465850\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"admin@example.com\",\r\n  \"password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginMedecin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"medecin@example.com\",\r\n  \"password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creerUserByAdmin",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68ebddeaffde12dbc5bac6c8\",\r\n  \"email\": \"ameksakhadija026@gmail.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760518688,\r\n  \"exp\": 1760547488\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"infirmiere@test.com\",\r\n  \"password\": \"Password123!\",\r\n  \"role\": \"infirmier\",\r\n  \"profile\": {\r\n    \"firstName\": \"Fatima\",\r\n    \"lastName\": \"Zahra\",\r\n    \"phone\": \"+212623456789\",\r\n    \"gender\": \"female\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "suspendUser",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68ebddeaffde12dbc5bac6c8\",\r\n  \"email\": \"ameksakhadija026@gmail.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760518688,\r\n  \"exp\": 1760547488\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/users/68efab660df216a4403343b5/reactivate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"68efab660df216a4403343b5",
+						"reactivate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68ebddeaffde12dbc5bac6c8\",\r\n  \"email\": \"ameksakhadija026@gmail.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760518688,\r\n  \"exp\": 1760547488\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/68f104f60df216a4403343ef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"68f104f60df216a4403343ef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68ebddeaffde12dbc5bac6c8\",\r\n  \"email\": \"ameksakhadija026@gmail.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760288468,\r\n  \"exp\": 1760317268\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"verified\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/68f2137f449da2c6fcd7cf42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"68f2137f449da2c6fcd7cf42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creer patient",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68ebddeaffde12dbc5bac6c8\",\r\n  \"email\": \"ameksakhadija026@gmail.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760437050,\r\n  \"exp\": 1760465850\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"68ebd411ffde12dbc5bac6b0\",\r\n  \"firstName\": \"Ahmed\",\r\n  \"lastName\": \"Bennani\",\r\n  \"dateOfBirth\": \"1990-05-15\",\r\n  \"gender\": \"male\",\r\n  \"phone\": \"+212612345678\",\r\n  \"address\": {\r\n    \"street\": \"Avenue Mohammed V\",\r\n    \"city\": \"Casablanca\",\r\n    \"zipCode\": \"20000\",\r\n    \"country\": \"Morocco\"\r\n  },\r\n  \"emergencyContact\": {\r\n    \"name\": \"Fatima Bennani\",\r\n    \"relationship\": \"Wife\",\r\n    \"phone\": \"+212623456789\"\r\n  },\r\n  \"medicalInfo\": {\r\n    \"bloodType\": \"A+\",\r\n    \"allergies\": [\"Penicillin\", \"Pollen\"],\r\n    \"chronicDiseases\": [\"Asthma\"],\r\n    \"currentMedications\": [\r\n      {\r\n        \"name\": \"Ventolin\",\r\n        \"dosage\": \"100mcg\",\r\n        \"frequency\": \"As needed\"\r\n      }\r\n    ]\r\n  },\r\n  \"insurance\": {\r\n    \"provider\": \"CNSS\",\r\n    \"policyNumber\": \"12345678\",\r\n    \"validUntil\": \"2025-12-31\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPatines",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68ebddeaffde12dbc5bac6c8\",\r\n  \"email\": \"ameksakhadija026@gmail.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760437050,\r\n  \"exp\": 1760465850\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"68ebd411ffde12dbc5bac6b0\",\r\n  \"firstName\": \"Ahmed\",\r\n  \"lastName\": \"Bennani\",\r\n  \"dateOfBirth\": \"1990-05-15\",\r\n  \"gender\": \"male\",\r\n  \"phone\": \"+212612345678\",\r\n  \"address\": {\r\n    \"street\": \"Avenue Mohammed V\",\r\n    \"city\": \"Casablanca\",\r\n    \"zipCode\": \"20000\",\r\n    \"country\": \"Morocco\"\r\n  },\r\n  \"emergencyContact\": {\r\n    \"name\": \"Fatima Bennani\",\r\n    \"relationship\": \"Wife\",\r\n    \"phone\": \"+212623456789\"\r\n  },\r\n  \"medicalInfo\": {\r\n    \"bloodType\": \"A+\",\r\n    \"allergies\": [\"Penicillin\", \"Pollen\"],\r\n    \"chronicDiseases\": [\"Asthma\"],\r\n    \"currentMedications\": [\r\n      {\r\n        \"name\": \"Ventolin\",\r\n        \"dosage\": \"100mcg\",\r\n        \"frequency\": \"As needed\"\r\n      }\r\n    ]\r\n  },\r\n  \"insurance\": {\r\n    \"provider\": \"CNSS\",\r\n    \"policyNumber\": \"12345678\",\r\n    \"validUntil\": \"2025-12-31\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/patients/68f1f950449da2c6fcd7ceed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients",
+						"68f1f950449da2c6fcd7ceed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePatient",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68f104f60df216a4403343ef\",\r\n  \"email\": \"admin@example.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760688210,\r\n  \"exp\": 1760717010\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"phone\": \"0987654321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/patients/68f1f950449da2c6fcd7ceed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients",
+						"68f1f950449da2c6fcd7ceed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMedecin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYxMDRmNjBkZjIxNmE0NDAzMzQzZWYiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidmVyaWZpZWQiOnRydWUsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MDY5NDQxOSwiZXhwIjoxNzYwNzIzMjE5fQ.1nb8z1cLjh0sgv07cnErm-pG6tFZjCCqCMYvIAvXb2M\",",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/?role=medecin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "medecin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createAppointement",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68f104f60df216a4403343ef\",\r\n  \"email\": \"admin@example.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760688210,\r\n  \"exp\": 1760717010\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"patientId\": \"68f1f950449da2c6fcd7ceed\",\r\n  \"doctorId\": \"68f2137f449da2c6fcd7cf42\",\r\n  \"appointmentDate\": \"2025-12-30\",\r\n  \"startTime\": \"10:40\",\r\n  \"endTime\": \"12:00\",\r\n  \"reason\": \"Consultation\",\r\n  \"type\": \"consultation\",\r\n  \"notes\": \"Première visite\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAppointement",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68f104f60df216a4403343ef\",\r\n  \"email\": \"admin@example.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760688210,\r\n  \"exp\": 1760717010\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/appointments?page=1&limit=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDoctorAppointments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYxMDRmNjBkZjIxNmE0NDAzMzQzZWYiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidmVyaWZpZWQiOnRydWUsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MDY5NTQwMiwiZXhwIjoxNzYwNzI0MjAyfQ.omwpie5tD4NhUzN1pDVALhoFdTY1G1cWWe0MLl3jyy0\",",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/appointments/doctor/68efab660df216a4403343b5/?date=2025-10-20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments",
+						"doctor",
+						"68efab660df216a4403343b5",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2025-10-20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkAvailability",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGYxMDRmNjBkZjIxNmE0NDAzMzQzZWYiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidmVyaWZpZWQiOnRydWUsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2MDg2OTk0NiwiZXhwIjoxNzYwODk4NzQ2fQ.eJxHNcAUjjVoRf4xPKGCNMYuYe68HO6nmQV-HaGUF9Y\",",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/appointments/availability?doctorId=68efab660df216a4403343b5&date=2025-10-20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments",
+						"availability"
+					],
+					"query": [
+						{
+							"key": "doctorId",
+							"value": "68efab660df216a4403343b5"
+						},
+						{
+							"key": "date",
+							"value": "2025-10-20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAppointmentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/appointments/68f1fd25449da2c6fcd7cf0d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments",
+						"68f1fd25449da2c6fcd7cf0d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateAppointment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"startTime\": \"10:00\",\r\n  \"endTime\": \"10:30\",\r\n  \"notes\": \"Horaire modifié\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/appointments/68f1fd25449da2c6fcd7cf0d/cancel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments",
+						"68f1fd25449da2c6fcd7cf0d",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancelAppointment",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "secret",
+							"value": "a-string-secret-at-least-256-bits-long",
+							"type": "string"
+						},
+						{
+							"key": "payload",
+							"value": "{\r\n  \"userId\": \"68f104f60df216a4403343ef\",\r\n  \"email\": \"admin@example.com\",\r\n  \"verified\": true,\r\n  \"role\": \"admin\",\r\n  \"iat\": 1760688210,\r\n  \"exp\": 1760717010\r\n}",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"reason\": \"Patient indisponible\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/appointments/68f1fefd449da2c6fcd7cf1b/cancel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments",
+						"68f1fefd449da2c6fcd7cf1b",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "completAppointment",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"diagnosis\": \"Tension élevée\",\r\n  \"prescription\": \"Médicament X\",\r\n  \"notes\": \"Suivi dans 1 mois\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/appointments/68f1fd25449da2c6fcd7cf0d/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"appointments",
+						"68f1fd25449da2c6fcd7cf0d",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
